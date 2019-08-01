@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.stt{
+    width: 100%;
+    min-height: 842px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.stt1{ 
+    background-image: url("img/cogai.jpg");
+}
+.stt2{
+    background-image: url("img/boy.jpg");
+}
+.stt3{
+    background-image: url("img/cogai2.jpg");
+}
+.stt4{
+    background-image: url("img/doigiay.jpg");
+}
+.dang1{
+    width: 1170px;
+    height: 842px;
+    margin: auto;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.titNho{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titTo{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    line-height: 80px;
+}
+.nut{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    width: 180px;
+    height: 60px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nut:hover{
+    background-color: transparent;
+    color: black;
+}
+.so2{
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.so2 .titTo{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.so2 .chudcthem{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+.so2 a{
+    margin-top: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+.so2 a:hover{
+    color: black;
+    background-color:white;
+}
+.so3{
+    align-items: flex-start;
+    text-align: left;
+}

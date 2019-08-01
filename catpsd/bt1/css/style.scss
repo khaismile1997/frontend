@@ -1,0 +1,1346 @@
+@font-face {
+    src: url(../fonts/Lato-Regular.ttf);
+    font-family: lato-r;
+}
+@font-face {
+    src: url(../fonts/Lato-ThinItalic.ttf);
+    font-family: lato-thin-i;
+}
+@font-face{
+    src: url(../fonts/Lato-Thin.ttf);
+    font-family: lato-thin;
+}
+@font-face{
+    src: url(../fonts/Lato-Bold.ttf);
+    font-family: lato-bold;
+}
+@font-face{
+    src: url(../fonts/Lato-Black.ttf);
+    font-family: lato-black;
+}
+@font-face {
+    src: url(../fonts/Lato-Light.ttf);
+    font-family: lato-light;
+}
+@font-face{
+    src: url(../fonts/Lato-Hairline.ttf);
+    font-family: lato-hair;
+}
+/*khai bao mau*/
+$mauchinh: #21c2f8;
+$vientop: #0787d4;
+$maubdmenu: #1abc9c;
+$maubgslide: #a1b1bc;
+$mauchu: #1a1c27;
+$muted: #a1b1bc;
+$mauhello: #2c3e50;
+$maubgwork: #f9fafb;
+$maukhoihover: #222533;
+$mauplusic: #a9a9ad;
+$mauvienkhoi: #e7eaee;
+$maukhoicountB: #20caa8;
+$maukhoicountA: #1ad3af;
+$mauviennutslide: #d7dfe1;
+$mauhovernutslide: #fbfafa;
+$mauavtuser: #cccccc;
+$mauvienuser: #e4e7e9;
+$mauvienlogo: #e9e9e9;
+$mausocialic: #686d80;
+$mauvieninput: #dee6e6;
+$maustandard1: #616b77;
+$maustandard2: #878a92;
+$mauhoverstand: #788894;
+$maukhoipurchases: #55687a;
+$mauborderft: #262837;
+$mauphancachft: #293748;
+*{
+    margin: 0;
+    padding: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body{
+    font-family: lato-r;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a:active{
+    color: $maubdmenu;
+}
+ul, ol{
+    list-style: none;
+}
+.icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: white;
+}
+.text-center {
+    text-align: center!important;
+}
+.container{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-fluid{
+    @extend .container;
+    padding-left: 0;
+    padding-right: 0;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.center-column{
+    display: flex;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-outline{
+    @extend .btn;
+    color: white;
+    border: 1px solid white;
+}
+.btn-normal{
+    @extend .btn;
+    color: gray;
+    background: white;
+    border: 1px solid white;
+}
+.header-top{
+    height: 55px;
+    background-color: $mauchinh;
+    border-top: 5px solid $vientop;
+}
+.height-parent{
+    height: inherit;
+}
+.active{
+    border-top: 5px solid $maubdmenu;
+    transition: 0.5s;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.text-muted{
+    color: $muted;
+    font-family: lato-r;
+    font-size: 14pt;
+}
+.title-normal{
+    font-weight: lato-bold;
+    font-size: 15pt;
+    color: $mauchu;
+}
+.fixed-top{
+    position: fixed!important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    background: black;
+    opacity: 0.5;
+    font-size: 35px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 500;
+ }
+ .back-to-top.hien-ra{
+    visibility: visible;
+    transition: 1s;
+ }
+@media only screen and (min-width: 1265px){
+    /*css menu-bar*/
+.menu-bar{
+    .container{
+        .row.wrapper{
+            .nuttrenmenu{
+                a:first-child{
+                    margin-right: 20px;
+                }
+            }
+            .dsmenu{
+                height: 100px;
+                flex-grow: 1;
+                justify-content: space-around;
+                ul{
+                    li {
+                    height: inherit;
+                    margin-right: 25px;
+                        a{
+                            height: inherit;
+                            line-height: 95px;
+                        }
+                    }
+                    li.active{
+                        border-top: 5px solid $maubdmenu;
+                        a{
+                            line-height: 90px;
+                        }
+                    }
+                    li:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media only screen and (min-width : 768px) and (max-width : 1264px) {
+    /* css menu-bar */
+    .menu-bar{
+        .container{
+            .row.wrapper{
+                flex-direction: column;
+                padding-top: 10px;
+                .nav-brand{
+                    justify-content: center;
+                }
+                .nuttrenmenu{
+                    justify-content: center;
+                    a:first-child{
+                        margin-right: 50px;
+                    }
+                }
+                .dsmenu{
+                    padding-top: 20px;
+                    padding-bottom: 15px;
+                    height: 30px;
+                    flex-grow: 1;
+                    justify-content: space-around;
+                    ul{
+                        li {
+                        height: inherit;
+                        margin-right: 15px;
+                            a{
+                                height: inherit;
+                                font-size: 13px;
+                                line-height: 1.9;
+                            }
+                        }
+                        li.active{
+                            border-top: 3px solid $maubdmenu;
+                            a{
+                                line-height: 20px;
+                            }
+                        }
+                        li:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width : 767px){
+    .header-top{
+        height: 44px;
+        border-top: 4px solid $vientop;
+        .container{
+            display: flex;
+            flex-direction: row-reverse;
+            .social-icon{
+                display: none!important;
+            }
+            .nut-top{
+                .btn{
+                    padding: 3px 8px 3px 8px;
+                    font-size: 14px;
+                }
+            }
+            .toggle{
+                float: right;
+                display: block!important;
+                a{
+                color: white;
+                font-size: 20px;
+                border: 2px solid whitesmoke;
+                border-radius: 5px;
+                padding: 5px;
+                right: 0;} 
+            }
+        }
+    }
+    /*css menu-bar*/
+    .menu-bar{
+        .container{
+            .row.wrapper{
+                flex-direction: column;
+                align-items: center;
+                padding-top: 5px;
+                .nuttrenmenu{
+                    margin-top: 10px;
+                    a:first-child{
+                        margin-right: 100px;
+                    }
+                }
+                .dsmenu{
+                    width: 100%;
+                    background-color: whitesmoke;
+                    ul{
+                        display: none;
+                        width: inherit;
+                        flex-direction: column;
+                        li {
+                            border-bottom: 1px dashed gray;
+                            padding: 10px 10px 10px 50px;
+                            a{
+                                font-size: 13px;
+                            }
+                        }
+                        .menu-item:hover{       
+                            a{
+                                color: $maubdmenu;
+                            }
+                        }
+                        li.active{
+                            border-top: none;
+                        }
+                        li:last-child{
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*css menu-bar*/
+.menu-bar{
+    position: relative;
+    box-shadow: 0 5px 10px -5px #91a0aa;
+    .container{
+        .row.wrapper{
+            justify-content: space-between;
+            .dsmenu{
+                justify-content: space-around;
+                ul{
+                    li {
+                    @extend .center-column;
+                        a{
+                            display: block;
+                            text-transform: uppercase;
+                        }
+                    }
+                    li.active{
+                        a{
+                            color: $maubdmenu;
+                        }
+                    }
+                    li:first-child{
+                        a{
+                            color: $maubdmenu;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*css social-icon */
+.header-top{
+    display: flex;
+    justify-content: center;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .social-icon{
+            display: flex;
+            a{
+                text-align: center;
+                margin-right: 15px;
+            }
+            a:last-child{
+                margin-right: 0;
+            }
+        }
+        .toggle{
+            display: none;
+        }
+    }
+}
+/*css slider*/
+.slide-container{
+    display: flex;
+    align-items: center;
+    .slide-stage{
+        width: 100%;
+        height: 768px;
+        .slide-image:first-child{opacity:1; z-index: 1;}
+        .slide-image{
+            display: flex;
+            align-items: center;
+            height: 768px;
+            background-color: $maubgslide;
+            width: 100%;
+            position: absolute;
+            opacity:1;
+            .container{
+                .smalltitle{
+                    font-size: 26pt;
+                    font-family: lato-thin;
+                    color: $mauchu;
+                }
+                .bigtitle{
+                    color: $mauchu;
+                    font-size: 50px;
+                    font-family: lato-black;
+                    text-transform: uppercase;
+                    position: relative;
+                }
+                .bigtitle:after{
+                    content: "";
+                    position: absolute;
+                    top: 70px;
+                    left: 138px;
+                    transform: translateX(-50%);
+                    width: 270px;
+                    height: 4px;
+                    background-image: linear-gradient(left, $mauchinh 37%, $mauchu 38%);
+                }
+                .wrap-itemslide{
+                    margin-top: 40px;
+                    .itemslide:last-child{
+                        margin-bottom: 0;
+                    }
+                    .itemslide{
+                        margin-bottom: 20px;
+                        .listtit{
+                            font-family: lato-bold;
+                            font-size: 20pt;
+                            color: $mauchu;
+                        }
+                        .ticktron{
+                            margin-right: 20px;
+                            transform: scale(1);
+                            color: #fff;
+                            background: white;
+                            position: relative;
+                            width: 30px;
+                            height: 30px;
+                            border: 4px solid #fff;
+                            border-radius: 50%;
+                            background-clip: padding-box;
+                            text-align: center;
+                            opacity: .9;
+                            transition: 0.5s;
+                            i{
+                                position: absolute;
+                                right: 3px;
+                                top: 3px;
+                                color: $mauchu;
+                            }
+                        }
+                        .ticktron:hover{
+                            transform: scale(1.3);
+                        }
+                        .ticktron:hover i{
+                            color: $mauchinh!important;
+                        }
+                    }
+                }
+                .nutmua{
+                    margin-top: 30px;
+                    padding: 23px 50px;
+                    border-radius: 0;
+                    background-color: $mauchu;
+                    border: none;
+                    color: white;
+                    font-family: lato-black;
+                    font-size: 16pt;
+                }
+            }
+        }
+    }
+    .slide-pager{
+        position: absolute;
+        width: 100%;
+        height: 768px;
+        ul{
+            margin-left: -40px;
+            left: 50%;
+            bottom: 20px;
+            z-index: 6;
+            position: absolute;
+            margin: 10px 0 0;
+            padding: 0;
+            width: auto;
+            .slide-pager-slot {
+                color: #fff;
+                border: 1.5px solid #fff;
+                border-radius: 50%;
+                background-clip: padding-box;
+                opacity: .9;
+                transition: 0.5s;
+                transform: scale(1);
+                background: none repeat scroll 0 0 white;
+                display: block;
+                float: left;
+                height: 13px;
+                list-style: none outside none;
+                margin: 0 5px 0 0;
+                width: 13px;
+                cursor:pointer;
+            }
+            .focus{
+                transform: scale(1.2);
+                background:$mauchu;
+            }
+            .slide-pager-slot:hover{
+                background:$maubgslide;
+            }
+        }
+    }
+    .btncontrol{
+        z-index: 5;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid white;
+        transition: 0.5s;
+        i{
+            margin: 0 auto;
+            color: white;
+        }
+    }
+    .btncontrol:hover{
+        background-color: $mauchu;
+        border: 1px solid $mauchu;
+    }
+    .slide-control-prev{
+        left: 50px;
+        cursor:pointer;
+    }
+    .slide-control-next{
+        right: 50px;
+        cursor:pointer;
+    }
+}
+
+/*css contentinfo*/
+.contentinfo{
+    margin-bottom: 100px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        .contentleft{
+            width: 570px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            .hello{
+                font-family: lato-light;
+                font-size: 36pt;
+                color: $mauhello;
+            }
+            p{
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
+            p:nth-last-of-type(1){
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+            a{  
+                border: 0;
+                padding: 20px 25px;
+                background-color: $muted;
+                color: white;
+                font-family: lato-black;
+            }
+            a:hover{
+                box-shadow: 0 4px 2px -2px gray;
+            }
+        }
+        .contentright{
+            width: 570px;
+            height: auto;
+            .muc-item{
+                margin-bottom: 5px;
+                .cacmuc{
+                    padding-left: 20px;
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    height: auto;
+                    border: 1px solid $muted;
+                    cursor: pointer;
+                    .showcontent{
+                        border-left: 1px solid $muted;
+                        text-align: center;
+                        height: inherit;
+                        width: 42px;
+                        padding-bottom: 20px;
+                        padding-top: 20px;
+                        padding-left: 20px;
+                        margin-right: 20px;
+                    }
+                }
+                .hidecontent{
+                    display: none;
+                    padding: 20px;
+                    border: 1px solid $muted;
+                    border-top: 0;
+                    margin-bottom: 5px;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        margin-right: 15px;
+                    }
+                }
+            }         
+        }
+    }
+}
+// css các màn hình responsive
+@media only screen and (max-width : 900px){
+    .contentinfo{
+        .container{
+            display: block!important;
+        }
+    }
+}
+
+/*css contentinfo*/
+
+/*css amazingworks*/
+
+.amazingworks{
+    background-color: $maubgwork;
+    .titlework{
+        text-align: center;
+        font-family: lato-light;
+        font-size: 36pt;
+        color: $mauhello;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .boxwork{
+        padding-bottom: 100px;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                float: left;
+                width: calc(100% * (1/3));
+                flex-grow: 1;
+                .onebox{ 
+                    height: 250px;
+                    border: 1px solid $mauvienkhoi;
+                    .box-top{
+                        width: 100%;
+                        padding: 20px;
+                        height: 20%;
+                        background-color: white;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .numberlike{
+                            display: flex;
+                            font-size: 16pt;
+                            font-family: lato-r;
+                            p{
+                                margin-right: 10px;
+                            }
+                            i{
+                                cursor: pointer;
+                                padding-top: 2px;
+                            }
+                        }
+                        h3{
+                            font-size: 14pt;
+                        }
+                    }
+                    .box-bottom:hover .box-top{
+                        background-color: $maubgslide;
+                        color: white;
+                    }
+                    .box-bottom{
+                        width: 100%;
+                        height: 80%;
+                        background-color: $maubgslide;
+                        cursor: pointer;
+                        .layer1{    
+                            width: inherit;
+                            height: 100%;
+                            background-color: $maukhoihover;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: $mauplusic;
+                            font-size: 50pt;
+                            visibility: hidden;
+                        }
+                    }  
+                }
+                .onebox:hover{
+                    .box-bottom .layer1{
+                        visibility: visible;
+                    }
+                    .box-top{
+                        background-color: $maubgslide;
+                        .numberlike, h3{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*end amazingworks*/
+
+/*css boxwhy*/
+.boxwhy{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .contentleft{
+            margin-right: 50px;
+            width: 570px;
+            p:first-of-type{
+                margin-top: 25px;
+                margin-bottom: 35px;
+                font-size: 14pt;
+            }
+            p:last-of-type{
+                margin-bottom: 30px;
+                font-size: 14pt;
+            }
+            .whywork{
+                font-family: lato-light;
+                font-size: 36pt;
+                color: $mauhello;
+            }
+            a{  
+                border: 0;
+                padding: 20px 25px;
+                background-color: $muted;
+                color: white;
+                font-family: lato-black;
+            }
+            a:hover{
+                box-shadow: 0 4px 2px -2px gray;
+            }
+        }
+    }
+}
+/*end boxwhy*/
+
+/*css khoicount*/
+.khoicount{
+    display: flex;
+    .motkhoicount{
+        background-color: $maukhoicountB;
+        width: 20%;
+        height: 200px;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        transition: 0.5s;
+        cursor: pointer;
+        .count-top{
+            .amount{
+                font-family: lato-light;
+                font-size: 20pt;
+            }
+            i{
+                margin-left: 5px;
+                font-size: 20px;
+                display: none;
+            }
+        }
+        .action{
+            margin-top: 5px;
+            font-family: lato-black;
+            font-size: 10pt;
+            text-transform: uppercase;
+        }
+    }
+    .motkhoicount:nth-child(even){
+        background-color: $maukhoicountA;
+    }
+    .motkhoicount:hover{
+        background-color: $mauhello;
+        i{
+            display: block;
+        }
+    }
+}
+/*end khoi count*/
+
+/*css slideuser mẫu*/
+#exampleSlider {
+    .MS-content {
+        overflow: hidden;
+        white-space: nowrap;
+        .item {
+            display: inline-block;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            vertical-align: top;
+            border-right: none;
+            width: 100%;
+            .cotchinh{
+                width: inherit;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                .userinfo{
+                    width: 525px;
+                    padding: 30px;
+                    background-color: $maubgwork;
+                    border: 1px solid $mauvienuser;
+                    border-radius: 5px;
+                    margin-bottom: 30px;
+                    .avatar{
+                        width: 20%;
+                        height: 100px;
+                        float: left;
+                        margin-right: 20px;
+                        box-shadow: 0 0 3px gray;
+                        color: white;
+                        background: $mauavtuser;
+                        position: relative;
+                        border: 4px solid white;
+                        border-radius: 50%;
+                        background-clip: padding-box;
+                        text-align: center;
+                        opacity: .9;
+                        transition: 0.5s;
+                        justify-content: center;
+                        cursor: pointer;
+                        i{
+                            display: none;
+                        }
+                    }
+                    .content{
+                        width: 72%;
+                        display: flex;
+                        flex-direction: column;
+                        white-space: initial;
+                        h3{
+                            font-family: lato-bold;
+                            color:$mauhello;
+                            font-size: 14pt;
+                        }
+                        p{
+                            font-size: 12pt;
+                        }
+                        p:nth-of-type(1){
+                            margin-top: 10px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+                .userinfo:hover{
+                    background-color: white;
+                    .avatar{
+                        background: $mauhello;
+                        border: 4px solid $mauhello;
+                        box-shadow: 0 0 3px $mauhello;
+                        i{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .MS-controls {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        button {
+            border: 1px solid $mauviennutslide;
+            font-family: lato-r;
+            font-size: 12pt;
+            text-transform: capitalize;
+            color: $mauhello;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button:hover{
+            background-color: $mauhovernutslide;
+        }
+        .MS-left{
+            padding: 10px 20px;
+            border-top-right-radius: 0%;
+            border-bottom-right-radius: 0%;
+            
+            i{
+                margin-right: 10px;
+                font-size: 10px;
+                
+            }
+        }
+        .MS-right{
+            padding: 10px 20px;
+            border-top-left-radius: 0%;
+            border-bottom-left-radius: 0%;
+            border-left: none;
+            i{
+                margin-left: 10px;
+                font-size: 10px;
+            }
+        }
+    }
+}
+  @media (max-width: 767px) {
+    #exampleSlider .MS-content {
+      margin: 0;
+    }
+  }
+  #exampleSlider .MS-controls button:hover {
+    cursor: pointer;
+  }
+  #exampleSlider .MS-controls .MS-left {
+    left: 10px;
+  }
+  @media (max-width: 992px) {
+    #exampleSlider .MS-controls .MS-left {
+      left: -2px;
+    }
+  }
+  #exampleSlider .MS-controls .MS-right {
+    right: 10px;
+  }
+  @media (max-width: 992px) {
+    #exampleSlider .MS-controls .MS-right {
+      right: -2px;
+    }
+  }
+  /*end mẫu*/
+/*css custom slide mẫu*/
+.userslider{
+    margin-top: 100px;
+    h2{
+        text-align: center;
+        font-family: lato-light;
+        font-size: 36pt;
+        color: $mauhello;
+    }
+}
+/*end custom mẫu*/
+  
+/*css logocompany*/
+.logocompany{
+    border-top: 1px solid $mauvienlogo;
+    margin-top: 20px;
+    height: 145px;
+    .container{
+        .logo{                              
+            text-align: center;
+            float:left;
+            margin-right: 30px;
+            width: 154px;
+            margin-top: 45px;
+            margin-bottom: 15px;
+            filter: grayscale(100%);
+            cursor: pointer;
+        }
+        .logo:last-child{
+            margin-right: 0;
+        }
+        .logo:hover{
+            filter: none;
+        }
+    }
+}
+
+/*css formsubmit*/
+.formsubmit{
+    padding-top: 90px;
+    padding-bottom: 100px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .content-left{
+            width: 525px;
+            margin-right: 30px;
+            h3{
+                font-size: 36pt;
+                font-family: lato-light;
+                color: $mauhello;
+            }
+            .socialic{
+                margin-top: 25px;
+                margin-bottom: 25px;
+                i{
+                    font-size: 24px;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    color: $mausocialic;
+                }
+                i:hover{
+                    color: $maubdmenu;
+                }
+            }
+            p:last-child{
+                margin-top: 30px;
+                line-height: 1.8;
+            }
+        }
+        .form-right{
+            width: 525px;
+            .form-group{
+                input{
+                    width: 100%;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    border: 1px solid $mauvieninput;
+                    border-radius: 2px;
+                    box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+                }
+                ::placeholder{
+                    color: $muted;
+                }
+                input:hover{
+                    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+                }
+                input:focus{
+                    border: 1px solid $mauvieninput;
+                    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+                }
+                input:last-child{
+                    margin-bottom: 0;
+                    color: white;
+                    font-family: lato-black;
+                    background-color: $maubgslide;
+                    border: none;
+                    box-shadow: 0 4px 2px -2px gray;
+                }
+                textarea{
+                    width: 100%;
+                    height: 100px;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    border: 1px solid $mauvieninput;
+                    border-radius: 2px;
+                    box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+                    resize: none;
+                }
+                textarea:hover{
+                    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+                }
+            }
+        }
+    }
+}
+/*end formsubmit*/
+.khoistandard{
+    margin-top: 100px;
+    display: flex;
+    .motkhoi{  
+        position: relative;
+        background-color: $maustandard1;
+        width: 20%;
+        height: 250px;
+        color: white;
+        cursor: pointer;
+        .khoiduoi:nth-child(even){
+            background-color: $maustandard2; 
+        }
+        .khoiduoi{
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            bottom: 0;
+            flex-direction: column;
+            justify-content: center;
+            .currenttime{
+                font-family: lato-r;
+                .time{
+                    position: relative;
+                    margin-right: 20px;
+                } 
+                .time:after{
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 15px;
+                    background-color: white;
+                    display: inline-block;
+                    left: 87px;
+                    top: 1px;
+                }
+            }
+            h3{
+                font-family: lato-bold;
+            }
+
+        }
+    }
+    .motkhoi:hover{
+        background-color: $mauhoverstand;
+        h3{
+            color: $maukhoicountA;
+        }
+        .khoiduoi{
+            background-color: $maukhoihover;
+
+        }
+    }
+}
+/*end standard*/
+
+/*css purchasesnow*/
+.purchasesnow{
+    margin-top: 1px;
+    height: 500px;
+    background-color: $maukhoipurchases;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        font-size: 36pt;
+        font-family: lato-light;
+        color: white;
+    }
+    p{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-family: lato-r;
+        font-size: 16pt;
+        color: white;
+    }
+    a{
+        padding: 15px 20px;
+        font-size: 16pt;
+        font-family: lato-black;
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+    a:hover{
+        background-color: white;
+        color: $maukhoipurchases;
+    }
+}
+
+/*css footer*/
+.footer-top{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: $mauchu;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .footerx{
+            width: 24%;
+            margin-right: 30px;
+            h3{
+                border-left: 5px solid $maubdmenu;
+                color: white;
+                padding-left: 20px;
+                font-family: lato-black;
+                text-transform: uppercase;
+            }
+            .time{
+                color: $mauhoverstand;
+            }
+        }
+        .footerx:last-child{
+            margin-right: 0;
+        }
+        .footer1{
+            p:nth-last-of-type(2){
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+            p{
+                font-size: 12pt;
+                line-height: 1.5;
+            }
+        }
+        .footer2{
+            .listposts{
+                margin-top: 50px;
+                font-size: 12pt;
+                .post-item{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid $mauborderft;
+                    cursor: pointer;
+                }
+                .post-item:first-child{
+                    padding-top: 0;
+                }
+                .post-item:last-child{
+                    border-bottom: 0;
+                }
+                .post-item:hover{
+                    color: white;
+                    .time{
+                        color: white;
+                    }
+                }
+            }
+        }
+        .footer3{
+            .listtweets{
+                margin-top: 50px;
+                font-size: 12pt;
+                .tweet-item{
+                    display: flex;
+                    padding-bottom: 20px;
+                    line-height: 1.6;
+                    border-bottom: 1px solid $mauborderft;
+                    cursor: pointer;
+                    i{
+                        background-color: $muted;
+                        border-radius: 50%;
+                        width: 25px;
+                        height: 25px;
+                        color: $mauchu;
+                        font-size: 16px;
+                        text-align: center;
+                        margin-right: 20px;
+                        padding: 5px;
+                    }
+                    a{
+                        color: $maubdmenu;
+                    }
+                }
+                .tweet-item:last-child{
+                    padding-top: 20px;
+                    border-bottom: 0;
+                }
+                .tweet-item:hover{
+                    color: white;
+                    i{
+                        background-color:white;
+                    }
+                    .time{
+                        color: white;
+                    }
+                }
+            }
+        }
+        .footer4{
+            .listworks{
+                margin-top: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .work-item{
+                    width: 78px;
+                    height: 78px;
+                    background-color: $maubdmenu;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
+
+.footer-bot{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $maukhoihover;
+    .container{      
+        display: flex;
+        justify-content: space-between;
+        .listleft{
+            display: flex;
+            font-size: 12pt;
+            .left-item{
+                position: relative;
+                margin-right: 15px;
+                a{
+                    color: $maubdmenu;
+                }
+            }
+            .left-item:nth-last-of-type(2):after{            
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 15px;
+                background-color: $mauphancachft;
+                display: inline-block;
+                left: -8px;
+                top: 2px;              
+            }
+            .left-item:nth-last-of-type(2):before{            
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 15px;
+                background-color: $mauphancachft;
+                display: inline-block;
+                right: -8px;
+                top: 2px;           
+            }     
+        }
+        .listright{
+            display: flex;
+            font-size: 12pt;
+            .socialft{
+                cursor: pointer;
+                margin-right: 15px;
+            }
+            .socialft:hover{
+                color: white;
+            }
+        }
+    }
+}

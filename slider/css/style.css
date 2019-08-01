@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans'; }
+
+ul,
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
+
+#slideshow {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center; }
+
+#slideshow img {
+  width: 100%; }
+
+#slideshow span {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 30px;
+  margin-top: -72px;
+  text-shadow: 0px 0px 5px #000;
+  cursor: pointer;
+  padding: 5px 5px 7px 5px;
+  border-radius: 3px;
+  transition: 0.5s;
+  z-index: 10; }
+
+#slideshow span:hover,
+#slideshow span:focus {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+#slideshow .prev {
+  left: 5%; }
+
+#slideshow .next {
+  right: 5%; }
+
+#slideshow .slide {
+  display: none;
+  float: left;
+  position: absolute; }
+
+#slideshow .slide-active {
+  position: relative; }
+
+#slideshow .text {
+  position: relative;
+  text-align: center;
+  top: -100px;
+  color: white; }
+
+#slideshow ul {
+  position: relative;
+  top: -110px; }
+
+#slideshow .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 0 2px;
+  cursor: pointer;
+  transition: 0.5s; }
+
+#slideshow .dot-active,
+.dot:hover,
+.dot:focus {
+  background-color: white; }
+
+/*# sourceMappingURL=style.css.map */

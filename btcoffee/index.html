@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Quang Khai</h1>
+        </header>
+        <img src="img/cf1.jpg" alt="coffee" class="hinhbg">
+        <div class="wrapper">
+            <div class="menucot">
+                <a href="#" class="cot1">
+                    <div class="nen"></div>
+                    <div class="giua">
+                        <div class="tronggiua">
+                            <h2>Coffee menu</h2>
+                        </div>
+                    </div>
+                    <div class="title">deliciously deverse</div>
+                    <div class="duoi">
+                        <i class="fas fa-utensil-spoon"></i>
+                        <p class="titdo">life and coffee</p>
+                        <p class="tittrang">a great combination</p>
+                    </div>
+                </a>
+                <a href="#" class="cot1">
+                    <div class="nen"></div>
+                    <div class="giua">
+                        <div class="tronggiua">
+                            <h2>Coffee menu</h2>
+                        </div>
+                    </div>
+                    <div class="title">deliciously deverse</div>
+                    <div class="duoi">
+                        <i class="fas fa-utensil-spoon"></i>
+                        <p class="titdo">life and coffee</p>
+                        <p class="tittrang">a great combination</p>
+                    </div>
+                </a>
+                <a href="#" class="cot1">
+                    <div class="nen"></div>
+                    <div class="giua">
+                        <div class="tronggiua">
+                            <h2>Coffee menu</h2>
+                        </div>
+                    </div>
+                    <div class="title">deliciously deverse</div>
+                    <div class="duoi">
+                        <i class="fas fa-utensil-spoon"></i>
+                        <p class="titdo">life and coffee</p>
+                        <p class="tittrang">a great combination</p>
+                    </div>
+                </a>
+                <a href="#" class="cot1">
+                    <div class="nen"></div>
+                    <div class="giua">
+                        <div class="tronggiua">
+                            <h2>Coffee menu</h2>
+                        </div>
+                    </div>
+                    <div class="title">deliciously deverse</div>
+                    <div class="duoi">
+                        <i class="fas fa-utensil-spoon"></i>
+                        <p class="titdo">life and coffee</p>
+                        <p class="tittrang">a great combination</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var img = document.querySelector(".hinhbg");
+
+        var backgrounds = new Array(
+            'img/cf1.jpg'
+            , 'img/cf2.jpg'
+            , 'img/cf3.jpg'
+        );
+        var current = 0;
+        function nextBackground() {
+            current++;
+            current = current % backgrounds.length;
+            img.setAttribute("src", backgrounds[current])
+        }
+
+        setInterval(nextBackground, 5000);
+
+        img.setAttribute("src", backgrounds[0]);
+    });
+</script>
+
+</html>

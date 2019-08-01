@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    width: 3000px;
+    height: 1000px;
+}
+.wrapper{
+    position: absolute;
+    width: 3000px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.button{
+    width: 300px;
+    height: 500px;
+    background-color: red;
+    border: 5px solid black;
+    font-size: 30px;
+    color: white;
+}

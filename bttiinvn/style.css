@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.baongoai{
+    width: 310px;
+    height: 270px;
+    position: relative;
+    display: block;
+    
+}
+.titTo{
+    width: 310px;
+    height: 36px;
+    background: url(img/anhnhieu.png) no-repeat scroll 0 -418px transparent;
+    position: absolute;
+    z-index: 3;
+}
+.titTo h2{
+    display: none;
+}
+.duoi{
+    width: 310px;
+    height: 270px;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    border: solid 1px #DCDCDC;
+    background-color: #F8F1F7;
+}
+.anhbv img{
+    width: 297px;
+    height: 168px;
+    position: absolute;
+    z-index: 2;
+    padding: 6.5px;
+}
+.titNho a{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}

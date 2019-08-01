@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ece8e5;
+}
+nav {
+    height: 40px!important;
+    width: 100%;
+    background: #455868;
+    font-size: 11pt;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 2px solid #283744;
+    ul {
+        padding: 0;
+        margin: 0 auto;
+        width: 550px;
+        height: 40px;
+        li {
+            display: inline;
+            float: left;
+            a {
+                color: #fff;
+                display: inline-block;
+                width: 110px;
+                text-align: center;
+                text-decoration: none;
+                line-height: 40px;
+                text-shadow: 1px 1px 0px #283744;
+                border-right: 1px solid #576979;
+                box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                -webkit-box-sizing:border-box;
+            }
+        }
+        li:last-child a {
+            border-right: 0;
+        }
+    }
+    a:hover, a:active{
+        background-color: #8c99a4;
+    }
+    a#pull {
+        display: none;
+    }
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+@media screen and (max-width: 600px){
+    nav {
+        height: auto!important;
+        ul{
+            width: 100%;
+            display: block;
+            height: auto;
+            li{
+                width: 50%;
+                float: left;
+                position: relative;
+                a{
+                    width: 100%;
+                    border-bottom: 1px solid #576979;
+                    border-right: 1px solid #576979;
+                }
+            }
+            li:last-child a{
+                border-right: 1px solid #576979;
+            }
+        }
+        a {
+            text-align: left!important;
+            text-indent: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    nav {
+        border-bottom: 0;
+        ul{
+            display: none;
+            height: auto;
+        }
+        a#pull{
+            padding-top: 15px;
+            text-decoration: none;
+            color: white;
+            display: block;
+            text-align: center!important;
+            background-color: #283744;
+            width: 100%;
+            height: 30px;
+            position: relative;
+            i{
+                position: absolute;
+                right: 15px;
+                top:15px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px){
+    nav {
+        ul{
+            display: none;
+            height: auto;
+            li{
+                width: 100%;
+                float: left;
+                position: relative;
+                a{
+                    border-bottom: 1px solid #576979;
+                    border-right: 1px solid #576979;
+                }
+            }
+        }
+    }
+}

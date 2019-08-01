@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.doi-bg-menu{
+    background: #232a31;
+    opacity: 0.9;
+}
+.navbar-brand img{
+    height: 30px;
+}
+
+.navbar-dark.menutop .navbar-nav .nav-link{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+.navbar.menutop>.container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+.nutdetails{
+    border: 2px solid white;
+    color: whitesmoke;
+}
+.nutdetails:hover{
+    background-color: white;
+    border: 2px solid white;
+    color: grey;
+}
+
+.title h2{
+    padding-top: 50px;
+    font-size: 35px;
+}
+.title small{
+    padding-top: 20px;
+    font-size: 18px;
+}
+@media (max-width: 575px){
+    .navbar-dark.menutop .navbar-toggler {
+    border-color:white;
+    background: none;
+    color: #e8e8e8;
+}
+    .navbar-dark.menutop .navbar-toggler:hover {
+    border-color:white;
+    background: none;
+    color: #ffffff;
+}
+    .navbar-dark.menutop .navbar-nav a.nav-link {
+    color: white;
+    padding: 10px 0px 0 0px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    }
+               
+    img.logonho {
+    height: 25px;
+    }
+    nav.navbar.menutop {
+    background-color: #232a31;
+    opacity: 0.75;
+    }
+    .navbar.menutop>.container{
+        padding-top: 0;
+    }
+}
+
+.nospace [class*='col-'] {
+    padding-left: 0;
+    padding-right: 0;
+}
+.phantext{
+    padding-left: 10px;
+}
+.phananh img.img-fluid {
+    padding-right: 10px; 
+}
+.nospace .khoinho {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    background: white;
+    height: auto;
+    border-bottom: 1px solid gray;
+    margin-bottom: 100px;
+}
+.noidung{
+    background-color: #E9E9E9;
+}
+.khoi1{
+    font-size: 12px;
+}
+.khoi3{
+    font-size: 12px;
+}
+.khoi3 p:nth-child(1){
+    font-size: 16px;
+}
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    background: rgb(0,0,0,0.7);
+    font-size: 35px;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -25px;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+ }
+ .back-to-top.hien-ra{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+ }

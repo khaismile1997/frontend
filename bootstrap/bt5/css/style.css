@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+header.masthead{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to bottom,rgba(92,77,66,0.8) 0,rgba(92,77,66,0.8) 100%),url("../img/masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+/* css menu */
+.navbar-light .navbar-brand.custombrand{
+   color: rgba(255,255,255,.7);
+   font-size: 20px;
+   font-weight: 700;
+   font-family: 'Merriweather', serif;
+}
+.navbar-light .navbar-brand.custombrand:hover{
+    color: white;
+}
+.navbar-light.menutop .navbar-nav .nav-link{
+    color: rgba(255,255,255,.7);
+   font-size: 14px;
+   font-weight: 700;
+   font-family: 'Merriweather', serif;
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
+.navbar-light.menutop .navbar-nav .nav-link:hover{
+    color: white;
+}
+@media (max-width:575px){
+    .navbar-light.menutop .navbar-nav a.nav-link {
+        color: #6C757D;
+    }
+    .navbar-light.menutop .navbar-nav a.nav-link:hover {
+        color: #F4623A;
+    }
+    nav.navbar.menutop {
+        background-color: white;
+    }
+    .navbar-light .navbar-brand.custombrand{
+        color: #212529;
+    }
+    .navbar-light .navbar-brand.custombrand:hover{
+        color: #212529;
+    }
+}
+/* end menu */
+/* css header*/
+
+h1.bigtitle{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+}
+hr.divider{
+    max-width: 3.25rem;
+    border-width: .2rem;
+    border-color: #f4623a;
+    margin: auto;
+}
+p.texthelp{
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: rgba(255,255,255,.75);
+    font-family: 'Merriweather', serif;
+}
+a.nutfind{
+    padding: 1.25rem 2.25rem;
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    background-color: #F4623A;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a.nutfind:hover{ background-color: #F24516}
+/* end header*/
+@media (max-width: 575px){
+    h1.bigtitle{
+        font-size: 35px;        
+    }
+    p.texthelp{
+        font-size: 16px;
+    }
+    .nhogiua [class*='col-'] {
+        text-align: center;
+    }
+}
+
+/* css section 1 */
+section.getstart{
+    background-color: #F4623A;
+    padding: 8rem 0;
+}
+h2.smalltitle{
+    font-size: 32px;
+}
+p.texthas{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Merriweather', serif;
+    color: rgba(255,255,255,.75);
+}
+hr.divider2{
+    max-width: 3.25rem;
+    border-width: .2rem;
+    border-color: white;
+    margin: auto;
+}
+a.nutstart{
+    color: black;
+    padding: 1.25rem 2.25rem;
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a.nutstart:hover{ background-color: #E2E6EA; color: black;}
+/* end section 1 */
+
+/* css section 2*/
+
+section.services{
+    padding: 8rem 0;
+}
+p.ptextkhoi{
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+.customic:before{
+    color: #F4623A;
+}
+
+/* end section 2*/
+
+/* css 1 khoi */
+a._1khoi{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+._1khoi img{
+    width: 100%;
+}
+._1khoi .nen{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    background-color: #F4623A;
+    transition: 0.5s;
+}
+.nen p{
+    margin: 0;
+    padding: 0;
+}
+.nen .ptext1{
+    font-weight: bold;
+    font-size: 14px;
+    color: #F2B09F;
+}
+.nen .ptext2{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: white;
+}
+a._1khoi:hover .nen{
+    opacity: 0.9;
+}
+.xoapd{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+section.sdownload{
+    background-color: #343A40;
+    padding: 8rem 0;
+}
+p.textready{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Merriweather', serif;
+}
+a.contact{
+    color: #F4623A; font-size: 16px; font-family: 'Merriweather', serif;
+    display: block;
+}
+div.phone{
+    font-family: 'Merriweather', serif;
+}
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px #00000075;
+	   -moz-box-shadow: 0 8px 6px -6px #00000075;
+	        box-shadow: 0 8px 6px -6px #00000075;
+}
+.doi-bg-menu {
+    background-color: white;
+}
+.doi-mau-brand{
+    color: black!important;
+}
+.doi-mau-brand:hover{
+    color: #F4623A!important;
+}
+.doi-mau-menu{
+    color: black!important;
+}
+.doi-mau-menu:hover{
+    color: #F4623A!important;
+}
+.doi-chu-cam{
+    color: #F4623A!important;
+}
+
+/*css back to top*/
+
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    background: rgb(0,0,0,0.7);
+    font-size: 35px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -25px;
+    cursor: pointer;
+    visibility: hidden;
+ }
+ .back-to-top.hien-ra{
+    visibility: visible;
+    transition: 1s;
+ }

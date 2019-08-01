@@ -1,0 +1,23 @@
+*{margin: 0; padding: 0;}
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: white solid 1px;
+    background: inherit;
+}
+.carousel-indicators .active{
+    background: white;
+}
+.nutslide{
+    width: 30px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    top: 10%;
+    left: 3%;
+}

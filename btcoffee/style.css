@@ -1,0 +1,143 @@
+*{padding: 0; margin: 0;}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{  
+    width: 100%;
+    height: 100%;
+}
+.container{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+.container img{
+    z-index: 1;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    animation: zoomto 15s infinite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header{
+    font-family: 'Roboto', sans-serif;
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    width: inherit;
+    height: 100px;
+}
+.wrapper{
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+    position: absolute;
+}
+.menucot{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cot1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 24%;
+    height: 100%;
+    position: relative;
+}
+.nen{
+    width: 100%;
+    height: inherit;
+    background-color: #4F412E;
+    opacity: 0;
+    transition: 0.5s;
+}
+.giua{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+.giua h2{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.title{
+    top: 50%;
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    background-color: #8D1330;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.duoi{
+    position: absolute;
+    bottom: -100px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.duoi i{
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+.duoi .titdo{
+    font-size: 14px;
+    color: #c4073a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.duoi .tittrang{
+    font-size: 13px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cot1:hover .duoi{
+    opacity: 1;
+    bottom: 50px;
+}
+.cot1:hover .nen{
+    opacity: 0.5;
+}
+.cot1:hover .title{
+    opacity: 1;
+    top: 55%;
+}
+@-webkit-keyframes zoomto{
+    from {transform: scale(1);}
+    to {transform: scale(1.5);}
+}
+@-webkit-keyframes fade{
+    0% { opacity:1; }
+    10%{ opacity:0.1; }
+    20%{ opacity:0.2; }
+    30%{ opacity:0.3; }
+    40%{ opacity:0.4; }
+  50%  { opacity:0.5; }
+  60%{ opacity:0.6; }
+  70%{ opacity:0.7; }
+  80%{ opacity:0.8; }
+  90%   {opacity: 0.9;}
+  100% { opacity:1; }
+}
+
+

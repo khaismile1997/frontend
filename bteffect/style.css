@@ -1,0 +1,49 @@
+*{
+margin: 0;
+padding: 0;
+}
+.cha{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.con{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-color: #2C3F52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+}
+.con a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding: 7px;
+    background-color: #ED4E6E;
+    border-radius: 2px;
+    margin-top: 30px;
+}
+.con .tieude{
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.con .tacgia{
+    font-size: 16px;
+    color: #ED4E6E;
+    font-family: Arial, Helvetica, sans-serif
+}
+.cha:hover .con{
+    opacity: 1;
+    top: 15px;
+    left: 15px;
+}

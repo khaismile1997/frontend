@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.tintong{
+    margin: auto;
+    width: 430px;
+    height: 360px;
+}
+.tren{
+    margin-top: 20px;
+}
+.vientren{
+    border-top: solid 2px #DB5467;
+    text-align: center;
+}
+.vientren a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #D7657C;
+    font-size: 24px;
+    background-color: #fff;
+    padding: 10px;
+    position: relative; 
+    top: 15px;
+}
+.vienduoi{
+    height: 2px;
+    border-top: solid 1px #E9E9E9;
+    border-bottom: solid 1px #DADADA;
+}
+.duoi{
+    width: 430px;
+    height: auto;
+    margin-top: 20px;
+}
+.tintren img{
+    float: left;
+    margin-right: 10px;
+    border: solid 1px #C7C7C7;
+    padding: 3px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.05);
+}
+.tintren a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+    font-weight: bold;
+}
+.tintren p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    color: #666666;
+    line-height: 15px;
+    margin-top: 5px;
+}
+.tinduoi{
+    margin-top: 25px;
+}
+.tinduoi ul li{
+    list-style: none;
+    border-bottom: dotted 1px #C5C5C5;
+    padding: 10px;
+    padding-left: 5px;
+}
+.tinduoi a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #1f1f1f;
+}
+.tinduoi i{
+    font-size: 4px;
+    padding-right: 8px;
+    position: relative;
+    top: -3px;
+    color: #DD6485;
+}
